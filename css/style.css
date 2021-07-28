@@ -48,3 +48,33 @@ header{
     padding:3px 5px;
    
 }
+
+
+
+/* main */
+.main-container{
+    display: flex;
+     width: calc(100% / 1.5);
+  
+    flex-wrap: wrap;
+   text-align: center;
+    margin: auto;
+}
+.main-container ul{
+   
+    text-decoration: none;
+    list-style: none;
+    width:200px;
+    
+    
+}
+
+.main-container  li{
+
+   
+  
+    
+    
+}
+
+    
