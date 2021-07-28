@@ -15,57 +15,57 @@ $dischi =[
                'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
              ],
              [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Bad',
+                 'author' => 'Micahel Jackson',
+                 'year' => 1987,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Millenium',
+                 'author' => 'Backstreet Boys',
+                 'year' => 1999,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Come on Over',
+                 'author' => 'Shania Twain ',
+                 'year' => 1997,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Led Zeppelin IV ',
+                 'author' => 'Led Zeppelin',
+                 'year' => 1971,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Appetite for Destruction ',
+                 'author' => 'Guns N’Roses ',
+                 'year' => 1987,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Daydream',
+                 'author' => 'Mariah Carey ',
+                 'year' => 1995,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'The Dark Side of the Moon',
+                 'author' => 'Pink Floyd',
+                 'year' => 1973,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Back in Black ',
+                 'author' => 'AC/DC',
+                 'year' => 1980,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
                [   
-                'title' => 'New Jersey',
-                 'author' => 'Bon Jovi',
-                 'year' => 1988,
+                'title' => 'Thriller',
+                 'author' => 'Michael Jackson',
+                 'year' => 1982,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
                ],
 
@@ -123,10 +123,11 @@ $dischi =[
             <?php foreach($dischi as $musica) { ?>
                 <ul>
 
-                <li><?php echo $musica['title'] . '<br>'?> </li>
-                <li><?php echo $musica['author'] . '<br>'?> </li>
-                <li><?php echo $musica['year'] . '<br>'?> </li>
-                <li><?php echo $musica['poster'] . '<br>' . '<br>' . '<br>'?> </li>
+                <li class="li-title"><?php echo $musica['title'] . '<br>'?> </li>
+                <li><?php echo $musica['author'] . '<br>' ?> </li>
+                <li><?php echo $musica['year'] . '<br>' . '<br>'?> </li>
+                <?php echo $musica['poster'] . '<br>' . '<br>' . '<br>'?> </li> 
+                
                 </ul>
 
                 <?php } ?>

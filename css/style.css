@@ -66,15 +66,19 @@ header{
     list-style: none;
     width:200px;
     
+    padding:40px;
+    
+    
+}
+.li-title{
+    font-size: 25px;
+    color:gray;
     
 }
 
 .main-container  li{
 
    
-  
-    
-    
 }
 
     
