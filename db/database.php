@@ -62,10 +62,10 @@ $dischi =[
                  'author' => 'Michael Jackson',
                  'year' => 1982,
                  'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
-               ],
+               ]
 
 
-            ];
+            ]
               
               
 
