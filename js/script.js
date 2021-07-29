@@ -3,7 +3,8 @@
      {
          el: '#app',
          data:{
-             url : '../db/database.php',
+            //  url : '../db/database.php',
+            url : 'api/api-dischi.php',
              dischi : ''
          },
 

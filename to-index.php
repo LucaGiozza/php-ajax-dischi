@@ -1,6 +1,5 @@
 <?php
-//   include 'api/api-dischi.php';
-  include  'api/api-dischi.php';
+   include  'api/api-dischi.php';
 ?>
 
 <!DOCTYPE html>
