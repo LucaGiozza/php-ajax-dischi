@@ -28,39 +28,24 @@ include 'database.php';
     
        
 <div class="main-container">
-    
+                 <?php foreach($dischi as $album) { ?>
 
-    
+                    <div class="img-container">
+                    <img class="foto" src="<?= $album['poster']; ?>" alt="<?= $album['title']; ?>">
+
+                    </div>
+                    <div class="descrizione-main">
+                    <h3><?= $album['title'];?></h3>
+                    <p><?= $album['author'];?></p>
+                    <?= $album['year'];?>
+
+                    </div>
+
+                    
+                  
 
 
-        <!-- <?php
-        foreach( $dischi as $musica){
-            echo $musica['title'] . '<br>';
-            echo $musica['author']. '<br>' ;
-            echo $musica['year']. '<br>';
-            echo $musica['poster']. '<br>' . '<br>' . '<br>';
-
-
-           
-            
-            
-           
-        }
-        ?> -->
-        
-
-        
-            <?php foreach($dischi as $musica) { ?>
-                <ul>
-
-                <li class="li-title"><?php echo $musica['title'] . '<br>'?> </li>
-                <li><?php echo $musica['author'] . '<br>' ?> </li>
-                <li><?php echo $musica['year'] . '<br>' . '<br>'?> </li>
-                <?php echo $musica['poster'] . '<br>' . '<br>' . '<br>'?> </li> 
-                
-                </ul>
-
-                <?php } ?>
+                    <?php } ?>
 
 
        

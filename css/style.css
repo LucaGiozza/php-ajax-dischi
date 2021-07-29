@@ -53,32 +53,29 @@ header{
 
 /* main */
 .main-container{
-    display: flex;
-     width: calc(100% / 1.5);
+    width:100%;
+   
+    
   
-    flex-wrap: wrap;
-   text-align: center;
+    
+  
     margin: auto;
 }
-.main-container ul{
-   
-    text-decoration: none;
-    list-style: none;
-    width:200px;
-    
-    padding:40px;
+
+.foto{
+    height: 300px;
     
     
 }
-.li-title{
-    font-size: 25px;
-    color:gray;
+.img-container{
+    display:flex;
     
-}
-
-.main-container  li{
-
+    width:calc(100%);
+    text-align: center;
    
 }
-
     
+.descrizione-main{
+    
+
+}
