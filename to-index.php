@@ -1,5 +1,6 @@
 <?php
-  include 'db/database.php';
+//   include 'api/api-dischi.php';
+  include  'api/api-dischi.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,7 @@
     </header>
 
     <main>
+        <h2>Libreria Musica</h2>
      <div class="container">
         <div class="row">
             <div class="col-4" v-for="cd in dischi">
