@@ -3,17 +3,23 @@
      {
          el: '#app',
          data:{
-            //  url : '../db/database.php',
+            
             url : 'api/api-dischi.php',
-             dischi : ''
+             albums : '',
+             genres : ''
+         },
+         methods:{
+
          },
 
          mounted(){
              axios
                .get(this.url)
                .then(response =>{
-                   console.log(response.data);
-                   this.dischi = response.data;
+                   console.log(response.data.albums);
+                   console.log(response.data.genres);
+                   this.albums = response.data.albums;
+                   this.genres = response.data.genres;
 
                })
          },

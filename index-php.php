@@ -3,7 +3,7 @@
 che stampa direttamente i dischi in pagina: al caricamento della
  pagina ci saranno tutti i dischi. -->
 <?php
-include 'database.php';
+include 'db/database.php';
 ?>
 
 <!DOCTYPE html>

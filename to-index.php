@@ -1,12 +1,14 @@
-<?php
-   include  'api/api-dischi.php';
-?>
+      <?php
+         
+     
+          include  'api/api-dischi.php';
 
+     ?>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -16,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="app">
+    <div  id="app" >
     <header>
         <img class="disco-header" src="img/header.jfif" alt="">
         <h1 class="title">Libreria Dischi</h1>
@@ -26,16 +28,18 @@
     </header>
 
     <main>
+        <div>
         <h2>Libreria Musica</h2>
      <div class="container">
         <div class="row">
-            <div class="col-4" v-for="cd in dischi">
+            <div class="col-4" v-for="cd in albums">
                <div class="card" style="width: 18rem;">
-                  <img :src="dischi.poster" class="card-img-top" :alt="dischi.title">
+                  <img :src="cd.poster" class="card-img-top" :alt="cd.title">
                   <div class="card-body">
-                     <h5 class="card-title">{{dischi.title}}</h5>
-                     <p class="card-text">{{dischi.author}}</p>
-                     <a href="#" class="btn btn-primary">{{dischi.year}}</a>
+                     <h5 class="card-title">{{cd.title}}</h5>
+                     <p class="card-text">{{cd.author}}</p>
+                     <a href="#" class="btn btn-primary">{{cd.year}}</a>
+                     <p class="card-text">{{cd.genre}}</p>
                   </div>
                 </div>
             </div>
@@ -43,6 +47,9 @@
 
 
      </div>
+            
+        </div>
+
     
     </main>
 
